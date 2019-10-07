@@ -1,0 +1,65 @@
+MAC.
+	Packages:
+		libusb installed from provided zipfile
+		pyserial via conda or canopy
+		pymodbus via condo or canopy
+	USB driver:
+		double click Exodriver_NativeUSB_Setup.pkg
+		in the Exodriver directory run
+		$ sudo ./install.sh
+		After installing the Exodriver, build the U3, U6, or UE9 example programs:
+		$ cd examples/U6/
+		$ make
+		Run one of example programs like this:
+		$ ./u6BasicConfigU6
+
+	labjack python
+		get the LabJackPython-5-26-2015 folder
+		open a terminal/command prompt. In the terminal, use the command line to go to 
+		LabJackPython directory (e.g., “cd Desktop/LabJackPython” ). Then run  the following 
+		command to install the LabJackPython modules:
+		$sudo python setup.py install
+	note: 2/25/16 we reinstalled labjack python from the LabJackPython-5-26-2015 folder and didn’t need to worry about modbus
+
+Linux.
+
+	USB driver:
+		use exodriver-639cce546d558a9473d2195fe6cb486b0cb0de73.zip 
+		or get the package from GitHub https://github.com/labjack/exodriver
+		in the Exodriver directory run
+		$ sudo ./install.sh
+		After installing the Exodriver, build the U3, U6, or UE9 example programs:
+		$ cd examples/U6/
+		$ make
+		Run one of example programs like this:
+		$ ./u6BasicConfigU6
+
+	labjack python
+		get the LabJackPython-5-26-2015 folder
+		open a terminal/command prompt. In the terminal, use the command line to 
+		go to LabJackPython directory (e.g., “cd 		Desktop/LabJackPython” ). 
+		Then run  the following command to install the LabJackPython modules:
+		$sudo python setup.py install
+
+
+Windows
+	USB driver:
+		go to https://labjack.com/support/software/installers/ud
+
+	labjack python
+		get the LabJackPython-5-26-2015 folder
+		open a terminal/command prompt. In the terminal, use the command line to 
+		go to LabJackPython directory (e.g., “cd 			Desktop/LabJackPython” ).
+		Then run  the following command to install the LabJackPython modules:
+		python setup.py install
+		
+	Labjack driver installation
+		go to https://labjack.com/support/software/installers
+		get the most recent driver instalation package for your system and install.
+
+Information at
+
+driver installation
+https://labjack.com/support/software/installers
+labjack python install
+https://labjack.com/support/software/examples/ud/labjackpython
