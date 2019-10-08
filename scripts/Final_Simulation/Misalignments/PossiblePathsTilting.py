@@ -1,0 +1,231 @@
+#from BackgroundValues import *
+#from RayTraceFunctionsTilting import *
+
+def TTTTioMtilt(Ri,p1,p2,p3,p4,originM,thetmirr):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_TP1 = IntPolT2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E8 = ReflEll(Ray_TP1,thet6,origin8,coeffellipse56,center8,range8) #E8
+    Ray_TP2 = IntPolT2(Ray_E8,coeffpolar,originpolar2,p2) #P2
+    Ray_E3 = ReflEll(Ray_TP2,thet,origin3,coeffellipse,center3,range3) #E3
+    Ray_M0 = IntM2tilt(Ray_E3, thetmirr,coeffmirr, originM) #off mirror
+    Ray_E4 = ReflEll(Ray_M0, thet,origin4,coeffellipse,center4,range4) #off E4
+    Ray_TP3 = IntPolT2(Ray_E4,coeffpolar,originpolar3,p3) #P3
+    Ray_E5 = ReflEll(Ray_TP3, thet5,origin5,coeffellipse56,center5,range5)#OFF E5
+    Ray_TP4 = IntPolT2(Ray_E5,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_TP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def RRRRioMtilt(Ri,p1,p2,p3,p4,originM,thetmirr):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_RP1 = IntPolR2(Ray1,coeffpolar,originpolar1,p1)#p1
+    Ray_E9 = ReflEll(Ray_RP1,thet5,origin9,coeffellipse56,center9,range9) #E9
+    Ray_RP2 = IntPolR2(Ray_E9,coeffpolar,originpolar2,p2) #P2
+    Ray_E3 = ReflEll(Ray_RP2,thet,origin3,coeffellipse,center3,range3) #E3
+    Ray_M0 = IntM2tilt(Ray_E3,thetmirr, coeffmirr, originM) #off mirror
+    Ray_E4 = ReflEll(Ray_M0, thet,origin4,coeffellipse,center4,range4) #off E4
+    Ray_RP3 = IntPolR2(Ray_E4,coeffpolar,originpolar3,p3) #P3
+    Ray_E6 = ReflEll(Ray_RP3, thet6,origin6,coeffellipse56,center6,range6) #off E6
+    Ray_RP4 = IntPolR2(Ray_E6,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_RP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def TTRRioMtilt(Ri,p1,p2,p3,p4,originM,thetmirr):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_TP1 = IntPolT2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E8 = ReflEll(Ray_TP1,thet6,origin8,coeffellipse56,center8,range8) #E8
+    Ray_TP2 = IntPolT2(Ray_E8,coeffpolar,originpolar2,p2) #P2
+    Ray_E3 = ReflEll(Ray_TP2,thet,origin3,coeffellipse,center3,range3) #E3
+    Ray_M0 = IntM2tilt(Ray_E3,thetmirr, coeffmirr, originM) #off mirror
+    Ray_E4 = ReflEll(Ray_M0, thet,origin4,coeffellipse,center4,range4) #off E4
+    Ray_RP3 = IntPolR2(Ray_E4,coeffpolar,originpolar3,p3) #P3
+    Ray_E6 = ReflEll(Ray_RP3, thet6,origin6,coeffellipse56,center6,range6) #off E6
+    Ray_RP4 = IntPolR2(Ray_E6,coeffpolar,originpolar4,p4)    
+    Ray_E72 = ReflEll(Ray_RP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def RTTRioMtilt(Ri,p1,p2,p3,p4,originM,thetmirr):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_RP1 = IntPolR2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E9 = ReflEll(Ray_RP1,thet5,origin9,coeffellipse56,center9,range9) #E9
+    Ray_TP2 = IntPolT2(Ray_E9,coeffpolar,originpolar2,p2) #P2
+    Ray_E1 = ReflEll(Ray_TP2,thet,origin1,coeffellipse,center1,range1) #E1
+    Ray_M0 = IntM2tilt(Ray_E1,thetmirr, coeffmirr, originM) #off mirror
+    Ray_E2 = ReflEll(Ray_M0, thet,origin2,coeffellipse,center2,range2) #off E2
+    Ray_TP3 = IntPolT2(Ray_E2,coeffpolar,originpolar3,p3) #P3
+    Ray_E6 = ReflEll(Ray_TP3, thet6,origin6,coeffellipse56,center6,range6) #E6
+    Ray_RP4 = IntPolR2(Ray_E6,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_RP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def RTRTioMtilt(Ri,p1,p2,p3,p4,originM,thetmirr):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_RP1 = IntPolR2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E9 = ReflEll(Ray_RP1,thet5,origin9,coeffellipse56,center9,range9) #E9
+    Ray_TP2 = IntPolT2(Ray_E9,coeffpolar,originpolar2,p2) #P2
+    Ray_E1 = ReflEll(Ray_TP2,thet,origin1,coeffellipse,center1,range1) #E1
+    Ray_M0 = IntM2tilt(Ray_E1,thetmirr, coeffmirr, originM) #off mirror
+    Ray_E2 = ReflEll(Ray_M0, thet,origin2,coeffellipse,center2,range2) #off E2
+    Ray_RP3 = IntPolR2(Ray_E2,coeffpolar,originpolar3,p3) #P3
+    Ray_E5 = ReflEll(Ray_RP3, thet5,origin5,coeffellipse56,center5,range5) #E5
+    Ray_TP4 = IntPolT2(Ray_E5,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_TP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def TRRTioMtilt(Ri,p1,p2,p3,p4,originM,thetmirr):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_TP1 = IntPolT2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E8 = ReflEll(Ray_TP1,thet6,origin8,coeffellipse56,center8,range8) #E8
+    Ray_RP2 = IntPolR2(Ray_E8,coeffpolar,originpolar2,p2) #P2
+    Ray_E1 = ReflEll(Ray_RP2,thet,origin1,coeffellipse,center1,range1) #E3
+    Ray_M0 = IntM2tilt(Ray_E1,thetmirr, coeffmirr, originM) #off mirror
+    Ray_E2 = ReflEll(Ray_M0, thet,origin2,coeffellipse,center2,range2) #off E4
+    Ray_RP3 = IntPolR2(Ray_E2,coeffpolar,originpolar3,p3) #P3
+    Ray_E5 = ReflEll(Ray_RP3, thet5,origin5,coeffellipse56,center5,range5)
+    Ray_TP4 = IntPolT2(Ray_E5,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_TP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def RRTTioMtilt(Ri,p1,p2,p3,p4,originM,thetmirr):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_RP1 = IntPolR2(Ray1,coeffpolar,originpolar1,p1)#p1
+    Ray_E9 = ReflEll(Ray_RP1,thet5,origin9,coeffellipse56,center9,range9) #E8
+    Ray_RP2 = IntPolR2(Ray_E9,coeffpolar,originpolar2,p2) #P2
+    Ray_E3 = ReflEll(Ray_RP2,thet,origin3,coeffellipse,center3,range3) #E3
+    Ray_M0 = IntM2tilt(Ray_E3,thetmirr, coeffmirr, originM) #off mirror
+    Ray_E4 = ReflEll(Ray_M0, thet,origin4,coeffellipse,center4,range4) #off E4
+    Ray_TP3 = IntPolT2(Ray_E4,coeffpolar,originpolar3,p3) #P3
+    Ray_E5 = ReflEll(Ray_TP3, thet5,origin5,coeffellipse56,center5,range5)
+    Ray_TP4 = IntPolT2(Ray_E5,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_TP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def TRTRioMtilt(Ri,p1,p2,p3,p4,originM,thetmirr):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_TP1 = IntPolT2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E8 = ReflEll(Ray_TP1,thet6,origin8,coeffellipse56,center8,range8) #E8
+    Ray_RP2 = IntPolR2(Ray_E8,coeffpolar,originpolar2,p2) #P2
+    Ray_E1 = ReflEll(Ray_RP2,thet,origin1,coeffellipse,center1,range1) #E3
+    Ray_M0 = IntM2tilt(Ray_E1, thetmirr,coeffmirr, originM) #off mirror
+    Ray_E2 = ReflEll(Ray_M0, thet,origin2,coeffellipse,center2,range2) #off E4
+    Ray_TP3 = IntPolT2(Ray_E2,coeffpolar,originpolar3,p3) #P3
+    Ray_E6 = ReflEll(Ray_TP3, thet6,origin6,coeffellipse56,center6,range6)
+    Ray_RP4 = IntPolR2(Ray_E6,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_RP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+
+
+
+
+
+def TTTTioM(Ri,p1,p2,p3,p4,originM):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_TP1 = IntPolT2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E8 = ReflEll(Ray_TP1,thet6,origin8,coeffellipse56,center8,range8) #E8
+    Ray_TP2 = IntPolT2(Ray_E8,coeffpolar,originpolar2,p2) #P2
+    Ray_E3 = ReflEll(Ray_TP2,thet,origin3,coeffellipse,center3,range3) #E3
+    Ray_M0 = IntM2(Ray_E3, coeffmirr, originM) #off mirror
+    Ray_E4 = ReflEll(Ray_M0, thet,origin4,coeffellipse,center4,range4) #off E4
+    Ray_TP3 = IntPolT2(Ray_E4,coeffpolar,originpolar3,p3) #P3
+    Ray_E5 = ReflEll(Ray_TP3, thet5,origin5,coeffellipse56,center5,range5)#OFF E5
+    Ray_TP4 = IntPolT2(Ray_E5,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_TP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def RRRRioM(Ri,p1,p2,p3,p4,originM):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_RP1 = IntPolR2(Ray1,coeffpolar,originpolar1,p1)#p1
+    Ray_E9 = ReflEll(Ray_RP1,thet5,origin9,coeffellipse56,center9,range9) #E9
+    Ray_RP2 = IntPolR2(Ray_E9,coeffpolar,originpolar2,p2) #P2
+    Ray_E3 = ReflEll(Ray_RP2,thet,origin3,coeffellipse,center3,range3) #E3
+    Ray_M0 = IntM2(Ray_E3, coeffmirr, originM) #off mirror
+    Ray_E4 = ReflEll(Ray_M0, thet,origin4,coeffellipse,center4,range4) #off E4
+    Ray_RP3 = IntPolR2(Ray_E4,coeffpolar,originpolar3,p3) #P3
+    Ray_E6 = ReflEll(Ray_RP3, thet6,origin6,coeffellipse56,center6,range6) #off E6
+    Ray_RP4 = IntPolR2(Ray_E6,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_RP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def TTRRioM(Ri,p1,p2,p3,p4,originM):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_TP1 = IntPolT2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E8 = ReflEll(Ray_TP1,thet6,origin8,coeffellipse56,center8,range8) #E8
+    Ray_TP2 = IntPolT2(Ray_E8,coeffpolar,originpolar2,p2) #P2
+    Ray_E3 = ReflEll(Ray_TP2,thet,origin3,coeffellipse,center3,range3) #E3
+    Ray_M0 = IntM2(Ray_E3, coeffmirr, originM) #off mirror
+    Ray_E4 = ReflEll(Ray_M0, thet,origin4,coeffellipse,center4,range4) #off E4
+    Ray_RP3 = IntPolR2(Ray_E4,coeffpolar,originpolar3,p3) #P3
+    Ray_E6 = ReflEll(Ray_RP3, thet6,origin6,coeffellipse56,center6,range6) #off E6
+    Ray_RP4 = IntPolR2(Ray_E6,coeffpolar,originpolar4,p4)    
+    Ray_E72 = ReflEll(Ray_RP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def RTTRioM(Ri,p1,p2,p3,p4,originM):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_RP1 = IntPolR2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E9 = ReflEll(Ray_RP1,thet5,origin9,coeffellipse56,center9,range9) #E9
+    Ray_TP2 = IntPolT2(Ray_E9,coeffpolar,originpolar2,p2) #P2
+    Ray_E1 = ReflEll(Ray_TP2,thet,origin1,coeffellipse,center1,range1) #E1
+    Ray_M0 = IntM2(Ray_E1, coeffmirr, originM) #off mirror
+    Ray_E2 = ReflEll(Ray_M0, thet,origin2,coeffellipse,center2,range2) #off E2
+    Ray_TP3 = IntPolT2(Ray_E2,coeffpolar,originpolar3,p3) #P3
+    Ray_E6 = ReflEll(Ray_TP3, thet6,origin6,coeffellipse56,center6,range6) #E6
+    Ray_RP4 = IntPolR2(Ray_E6,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_RP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def RTRTioM(Ri,p1,p2,p3,p4,originM):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_RP1 = IntPolR2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E9 = ReflEll(Ray_RP1,thet5,origin9,coeffellipse56,center9,range9) #E9
+    Ray_TP2 = IntPolT2(Ray_E9,coeffpolar,originpolar2,p2) #P2
+    Ray_E1 = ReflEll(Ray_TP2,thet,origin1,coeffellipse,center1,range1) #E1
+    Ray_M0 = IntM2(Ray_E1, coeffmirr, originM) #off mirror
+    Ray_E2 = ReflEll(Ray_M0, thet,origin2,coeffellipse,center2,range2) #off E2
+    Ray_RP3 = IntPolR2(Ray_E2,coeffpolar,originpolar3,p3) #P3
+    Ray_E5 = ReflEll(Ray_RP3, thet5,origin5,coeffellipse56,center5,range5) #E5
+    Ray_TP4 = IntPolT2(Ray_E5,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_TP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def TRRTioM(Ri,p1,p2,p3,p4,originM):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_TP1 = IntPolT2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E8 = ReflEll(Ray_TP1,thet6,origin8,coeffellipse56,center8,range8) #E8
+    Ray_RP2 = IntPolR2(Ray_E8,coeffpolar,originpolar2,p2) #P2
+    Ray_E1 = ReflEll(Ray_RP2,thet,origin1,coeffellipse,center1,range1) #E3
+    Ray_M0 = IntM2(Ray_E1, coeffmirr, originM) #off mirror
+    Ray_E2 = ReflEll(Ray_M0, thet,origin2,coeffellipse,center2,range2) #off E4
+    Ray_RP3 = IntPolR2(Ray_E2,coeffpolar,originpolar3,p3) #P3
+    Ray_E5 = ReflEll(Ray_RP3, thet5,origin5,coeffellipse56,center5,range5)
+    Ray_TP4 = IntPolT2(Ray_E5,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_TP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def RRTTioM(Ri,p1,p2,p3,p4,originM):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_RP1 = IntPolR2(Ray1,coeffpolar,originpolar1,p1)#p1
+    Ray_E9 = ReflEll(Ray_RP1,thet5,origin9,coeffellipse56,center9,range9) #E8
+    Ray_RP2 = IntPolR2(Ray_E9,coeffpolar,originpolar2,p2) #P2
+    Ray_E3 = ReflEll(Ray_RP2,thet,origin3,coeffellipse,center3,range3) #E3
+    Ray_M0 = IntM2(Ray_E3, coeffmirr, originM) #off mirror
+    Ray_E4 = ReflEll(Ray_M0, thet,origin4,coeffellipse,center4,range4) #off E4
+    Ray_TP3 = IntPolT2(Ray_E4,coeffpolar,originpolar3,p3) #P3
+    Ray_E5 = ReflEll(Ray_TP3, thet5,origin5,coeffellipse56,center5,range5)
+    Ray_TP4 = IntPolT2(Ray_E5,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_TP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
+
+def TRTRioM(Ri,p1,p2,p3,p4,originM):
+    Ray1 = ReflEll(Ri,thet10,origin10,coeffellipse7,center10,range10)
+    Ray_TP1 = IntPolT2(Ray1,coeffpolar,originpolar1,p1) #P1
+    Ray_E8 = ReflEll(Ray_TP1,thet6,origin8,coeffellipse56,center8,range8) #E8
+    Ray_RP2 = IntPolR2(Ray_E8,coeffpolar,originpolar2,p2) #P2
+    Ray_E1 = ReflEll(Ray_RP2,thet,origin1,coeffellipse,center1,range1) #E3
+    Ray_M0 = IntM2(Ray_E1, coeffmirr, originM) #off mirror
+    Ray_E2 = ReflEll(Ray_M0, thet,origin2,coeffellipse,center2,range2) #off E4
+    Ray_TP3 = IntPolT2(Ray_E2,coeffpolar,originpolar3,p3) #P3
+    Ray_E6 = ReflEll(Ray_TP3, thet6,origin6,coeffellipse56,center6,range6)
+    Ray_RP4 = IntPolR2(Ray_E6,coeffpolar,originpolar4,p4)
+    Ray_E72 = ReflEll(Ray_RP4,thet7,origin7,coeffellipse7,center7,range7)
+    return Ray_E72
